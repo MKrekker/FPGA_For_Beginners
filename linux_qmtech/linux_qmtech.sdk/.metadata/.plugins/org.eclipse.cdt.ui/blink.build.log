@@ -1,0 +1,8 @@
+20:18:16 **** Auto Build of configuration Debug for project blink ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+
+20:18:16 Build Finished (took 474ms)
+
