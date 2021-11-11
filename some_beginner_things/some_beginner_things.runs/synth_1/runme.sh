@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/krekker/beginner/some_beginner_things/some_beginner_things.runs/synth_1'
+HD_PWD='/home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

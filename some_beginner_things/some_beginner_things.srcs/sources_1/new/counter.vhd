@@ -38,7 +38,6 @@ entity counter is
     Port ( id       : in STD_LOGIC;
            i_clk    : in STD_LOGIC;
            i_rst    : in STD_LOGIC;
-           en       : in std_logic;
            o_q      : out STD_LOGIC_vector(data_length -1 downto 0));
 end counter;
 
@@ -49,14 +48,14 @@ signal counter_o : std_logic_vector(data_length -1 downto 0);
             begin
                 if(i_rst = '0')then
                     o_q <= (others => '0');
-                elsif rising_edge(i_clk) and en = '1'then
+                elsif rising_edge(i_clk)then
                     if(id = '1') then
                         o_q <= (others => '0');
                     elsif(counter_o(data_length -1) = '0')then
                         counter_o <= counter_o + 1;
-                    else
-                       o_q <= counter_o;
+                        counter_o <= counter_o + 1;
                     end if;
                  end if;
+                 o_q <= counter_o;
              end process;
 end rtl;

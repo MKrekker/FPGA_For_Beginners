@@ -17,26 +17,22 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 14
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7s50csga324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/krekker/beginner/some_beginner_things/some_beginner_things.cache/wt [current_project]
-set_property parent.project_path /home/krekker/beginner/some_beginner_things/some_beginner_things.xpr [current_project]
+set_property webtalk.parent_dir /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.cache/wt [current_project]
+set_property parent.project_path /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo /home/krekker/beginner/some_beginner_things/some_beginner_things.cache/ip [current_project]
+set_property ip_output_repo /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  /home/krekker/beginner/some_beginner_things/some_beginner_things.srcs/sources_1/new/counter.vhd
-  /home/krekker/beginner/some_beginner_things/some_beginner_things.srcs/sources_1/new/d_ff.vhd
-  /home/krekker/beginner/some_beginner_things/some_beginner_things.srcs/sources_1/new/dff_en.vhd
-  /home/krekker/beginner/some_beginner_things/some_beginner_things.srcs/sources_1/new/debouncer.vhd
+  /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.srcs/sources_1/new/counter.vhd
+  /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.srcs/sources_1/new/d_ff.vhd
+  /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.srcs/sources_1/new/dff_en.vhd
+  /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.srcs/sources_1/new/debouncer.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -46,8 +42,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/krekker/beginner/some_beginner_things/some_beginner_things.srcs/constrs_1/new/debouncer.xdc
-set_property used_in_implementation false [get_files /home/krekker/beginner/some_beginner_things/some_beginner_things.srcs/constrs_1/new/debouncer.xdc]
+read_xdc /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.srcs/constrs_1/new/debouncer.xdc
+set_property used_in_implementation false [get_files /home/krekker/FPGA_For_Beginners/some_beginner_things/some_beginner_things.srcs/constrs_1/new/debouncer.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
