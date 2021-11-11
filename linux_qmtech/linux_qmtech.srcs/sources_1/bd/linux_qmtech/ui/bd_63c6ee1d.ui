@@ -1,0 +1,30 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1220 -y 80 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1220 -y 100 -defaultsOSRD
+preplace port led_h17_d4 -pg 1 -lvl 3 -x 1170 -y 660 -defaultsOSRD -bot
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 230 -y 110 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 230 -y 330 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 650 -y 370 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1030 -y 390 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 220 440 610 850
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 230 430
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 430 600 860
+preplace netloc ARESETN_1 1 1 1 N 350
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 80 NJ 80 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 100 NJ 100 NJ
+preplace netloc S00_AXI_1 1 1 1 450 120n
+preplace netloc axi_gpio_0_GPIO 1 3 1 1200 380n
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 N 200
+levelinfo -pg 1 0 230 650 1030 1220
+pagesize -pg 1 -db -bbox -sgen 0 0 1340 790
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_board_cnt":"7",
+   "da_clkrst_cnt":"1",
+   "da_ps7_cnt":"1"
+}
