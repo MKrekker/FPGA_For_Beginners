@@ -73,7 +73,6 @@ begin
             id      => xor_o, 
             i_clk   => clk_i,
             i_rst   => i_rst,
-            en      => en_inv,
             o_q     => cout
         );
         process(cout)
