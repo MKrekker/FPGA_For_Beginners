@@ -6,4 +6,4 @@
 # Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log d_ff.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source d_ff.tcl -notrace
+vivado -log dff_en.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source dff_en.tcl -notrace
