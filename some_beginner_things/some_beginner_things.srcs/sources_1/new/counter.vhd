@@ -49,17 +49,13 @@ signal counter_o : std_logic_vector(data_length -1 downto 0);
             begin
                 if(i_rst = '0')then
                     o_q <= '0';
-                elsif rising_edge(i_clk)then
-                    if(id = '1') then
-                        o_q <= '0';
-                    elsif(counter_o(data_length -1) = '0')then
-                        counter_o <= counter_o + 1;
+                elsif rising_edge(i_clk) and id = '0' then
+                    counter_o <= counter_o + 1;
+                    if(counter_o = 524288)then
+                        o_q <= '1';
+                        counter_o <= (others => '0');
                     end if;
-                 end if;
-                 if(counter_o = x"FFFFF")then
-                    o_q <= '1';
-                 else
-                    o_q <= '0';
-                 end if;
+                end if;
+                 
              end process;
 end rtl;
