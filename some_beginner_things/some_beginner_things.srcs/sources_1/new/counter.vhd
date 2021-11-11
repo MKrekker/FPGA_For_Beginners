@@ -36,28 +36,29 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity counter is
     generic(data_length : integer := 20);
     Port ( id       : in STD_LOGIC;
-           i_clk    : in STD_LOGIC;
-           i_rst    : in STD_LOGIC;
+           clk    : in STD_LOGIC;
+           rst    : in STD_LOGIC;
            o_q      : out STD_LOGIC
          );
 end counter;
 
 architecture rtl of counter is
-signal counter_o : std_logic_vector(data_length -1 downto 0);
+signal counter_o : std_logic_vector(data_length -1 downto 0):= (others => '0');
     begin
-        process(i_rst, i_clk)
+        
+        process(rst, clk)
             begin
-                if(i_rst = '0')then
+                if(rst = '0')then
                     o_q <= '0';
-                elsif rising_edge(i_clk) and id = '0' then
+                elsif(rising_edge(clk) and id = '0')then
                     counter_o <= counter_o + 1;
+                    
                     if(counter_o = 524288)then
                         o_q <= '1';
                         counter_o <= (others => '0');
-                    else 
+                    else
                         o_q <= '0';
                     end if;
                 end if;
-                 
              end process;
 end rtl;
