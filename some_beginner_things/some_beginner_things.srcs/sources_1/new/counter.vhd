@@ -54,6 +54,8 @@ signal counter_o : std_logic_vector(data_length -1 downto 0);
                     if(counter_o = 524288)then
                         o_q <= '1';
                         counter_o <= (others => '0');
+                    else 
+                        o_q <= '0';
                     end if;
                 end if;
                  
