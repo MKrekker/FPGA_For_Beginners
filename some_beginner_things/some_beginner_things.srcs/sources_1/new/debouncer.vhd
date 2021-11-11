@@ -46,7 +46,7 @@ architecture struct of debouncer is
 signal q_dff1   : std_logic;
 signal q_dff2   : std_logic; 
 signal xor_o   : std_logic;
-signal cout     : std_logic_vector(19 downto 0);
+signal cout     : std_logic;
 signal enable   : std_logic;
 signal en_inv   : std_logic;
 
@@ -71,24 +71,17 @@ begin
       inst_counter: entity work.counter(rtl)
         port map(
             id      => xor_o, 
-            i_clk   => clk_i,
-            i_rst   => i_rst,
+            clk     => clk_i,
+            rst     => i_rst,
             o_q     => cout
         );
-        process(cout)
-            begin
-                if(cout = x"FFFFF")then
-                    enable <= '1';
-                else
-                    enable <= '0';
-                end if;
-            end process;
+        
         inst_dff_en : entity work.dff_en(rtl)
             port map(
                 id    => q_dff2,
                 i_clk => clk_i,
                 i_rst => i_rst,
-                i_en  => enable,
+                i_en  => cout,
                 o_q   => result
             );
 end struct;

@@ -51,7 +51,7 @@ signal counter_o : std_logic_vector(data_length -1 downto 0):= (others => '0');
                 if(rst = '0')then
                     o_q <= '0';
                 elsif(rising_edge(clk))then
-                    if(id = '0')then
+                    if(id = '1')then
                         o_q <= '0';
                     elsif(counter_o < 1048575)then
                         counter_o <= counter_o + 1;
