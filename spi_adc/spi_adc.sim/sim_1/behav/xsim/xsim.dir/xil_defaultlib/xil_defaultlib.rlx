@@ -1,0 +1,13 @@
+0.6
+2019.1
+Sep  4 2019
+09:47:21
+/home/krekker/spi_adc/spi_adc.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1636208863,verilog,,/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/clk_div.v,,clk_wiz_0,,,../../../../spi_adc.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1636208863,verilog,,/home/krekker/spi_adc/spi_adc.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../spi_adc.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/clk_div.v,1636208460,verilog,,/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/mcp3201_beh_model.v,,clk_div,,,../../../../spi_adc.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/mcp3201_beh_model.v,1636211052,verilog,,/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/test_mcp3201.v,,mcp3201_beh_model,,,../../../../spi_adc.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/mcp3201_bram.vhd,1636727217,vhdl,,,,mcp3201_bram,,,,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/mcp3201_fsm.vhd,1636210135,vhdl,,,,mcp3201_fsm,,,,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/tb_test_mcs3201.v,1636210911,verilog,,,,tb_test_mcs3201,,,../../../../spi_adc.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/test_mcp3201.v,1636726918,verilog,,/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/tb_test_mcs3201.v,,test_mcp3201,,,../../../../spi_adc.srcs/sources_1/ip/clk_wiz_0,,,,,
