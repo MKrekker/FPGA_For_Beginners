@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
-// Date        : Thu Nov 11 19:33:23 2021
-// Host        : ls12-nvm-oma1 running 64-bit Debian GNU/Linux 10 (buster)
+// Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+// Date        : Thu Nov 11 22:56:40 2021
+// Host        : ls12nb-unassigned running 64-bit Debian GNU/Linux 10 (buster)
 // Command     : write_verilog -force -mode synth_stub
-//               /home/krekker/linux_qmtech/linux_qmtech.srcs/sources_1/bd/linux_qmtech/ip/linux_qmtech_auto_pc_0/linux_qmtech_auto_pc_0_stub.v
+//               /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.srcs/sources_1/bd/linux_qmtech/ip/linux_qmtech_auto_pc_0/linux_qmtech_auto_pc_0_stub.v
 // Design      : linux_qmtech_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* X_CORE_INFO = "axi_protocol_converter_v2_1_19_axi_protocol_converter,Vivado 2019.1.3" *)
+(* X_CORE_INFO = "axi_protocol_converter_v2_1_19_axi_protocol_converter,Vivado 2019.1" *)
 module linux_qmtech_auto_pc_0(aclk, aresetn, s_axi_awid, s_axi_awaddr, 
   s_axi_awlen, s_axi_awsize, s_axi_awburst, s_axi_awlock, s_axi_awcache, s_axi_awprot, 
   s_axi_awqos, s_axi_awvalid, s_axi_awready, s_axi_wid, s_axi_wdata, s_axi_wstrb, s_axi_wlast, 

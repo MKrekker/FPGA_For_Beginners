@@ -1,0 +1,81 @@
+$date
+  Thu Nov 18 15:12:36 2021
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module d_ff $end
+$var reg 1 ! d_in $end
+$var reg 1 " clk $end
+$var reg 1 # q_o $end
+$upscope $end
+$enddefinitions $end
+#0
+U!
+1"
+U#
+#5000000000
+1!
+0"
+#10000000000
+1"
+1#
+#15000000000
+0!
+0"
+#20000000000
+1"
+0#
+#25000000000
+1!
+0"
+#30000000000
+1"
+1#
+#35000000000
+0!
+0"
+#40000000000
+1"
+0#
+#45000000000
+1!
+0"
+#50000000000
+1"
+1#
+#55000000000
+0"
+#60000000000
+1"
+#65000000000
+0"
+#70000000000
+1"
+#75000000000
+0!
+0"
+#80000000000
+1"
+0#
+#85000000000
+0"
+#90000000000
+1"
+#95000000000
+1!
+0"
+#100000000000
+1"
+1#
+#105000000000
+0"

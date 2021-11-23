@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/opt/vivado/SDK/2019.1/bin:/opt/vivado/Vivado/2019.1/ids_lite/ISE/bin/lin64:/opt/vivado/Vivado/2019.1/bin
+  PATH=/home/mkrekker/Documents/vivado/SDK/2019.1/bin:/home/mkrekker/Documents/vivado/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkrekker/Documents/vivado/Vivado/2019.1/bin
 else
-  PATH=/opt/vivado/SDK/2019.1/bin:/opt/vivado/Vivado/2019.1/ids_lite/ISE/bin/lin64:/opt/vivado/Vivado/2019.1/bin:$PATH
+  PATH=/home/mkrekker/Documents/vivado/SDK/2019.1/bin:/home/mkrekker/Documents/vivado/Vivado/2019.1/ids_lite/ISE/bin/lin64:/home/mkrekker/Documents/vivado/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/krekker/linux_qmtech/linux_qmtech.runs/synth_1'
+HD_PWD='/home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

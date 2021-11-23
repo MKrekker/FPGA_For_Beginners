@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2019.1.3 (lin64) Build 2644227 Wed Sep  4 09:44:18 MDT 2019
--- Date        : Thu Nov 11 19:33:23 2021
--- Host        : ls12-nvm-oma1 running 64-bit Debian GNU/Linux 10 (buster)
+-- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+-- Date        : Thu Nov 11 22:56:41 2021
+-- Host        : ls12nb-unassigned running 64-bit Debian GNU/Linux 10 (buster)
 -- Command     : write_vhdl -force -mode funcsim
---               /home/krekker/linux_qmtech/linux_qmtech.srcs/sources_1/bd/linux_qmtech/ip/linux_qmtech_auto_pc_0/linux_qmtech_auto_pc_0_sim_netlist.vhdl
+--               /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.srcs/sources_1/bd/linux_qmtech/ip/linux_qmtech_auto_pc_0/linux_qmtech_auto_pc_0_sim_netlist.vhdl
 -- Design      : linux_qmtech_auto_pc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14731,7 +14731,7 @@ entity linux_qmtech_auto_pc_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of linux_qmtech_auto_pc_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of linux_qmtech_auto_pc_0 : entity is "axi_protocol_converter_v2_1_19_axi_protocol_converter,Vivado 2019.1.3";
+  attribute X_CORE_INFO of linux_qmtech_auto_pc_0 : entity is "axi_protocol_converter_v2_1_19_axi_protocol_converter,Vivado 2019.1";
 end linux_qmtech_auto_pc_0;
 
 architecture STRUCTURE of linux_qmtech_auto_pc_0 is

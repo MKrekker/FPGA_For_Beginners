@@ -2,6 +2,10 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.armv7.exe.debug.402235861;xilinx.gnu.armv7.exe.debug.402235861.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include"/>
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include-fixed"/>
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/include"/>
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/include"/>
 <includePath path="/opt/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include"/>
 <includePath path="/opt/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include-fixed"/>
 <includePath path="/opt/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/include"/>
@@ -834,6 +838,10 @@
 </instance>
 <instance id="xilinx.gnu.armv7.exe.debug.402235861;xilinx.gnu.armv7.exe.debug.402235861.;xilinx.gnu.armv7.c.toolchain.compiler.debug.1198101564;xilinx.gnu.armv7.c.compiler.input.1198303098">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include"/>
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include-fixed"/>
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/include"/>
+<includePath path="/home/mkrekker/Documents/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../arm-none-eabi/libc/usr/include"/>
 <includePath path="/opt/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include"/>
 <includePath path="/opt/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/include-fixed"/>
 <includePath path="/opt/vivado/SDK/2019.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/include"/>

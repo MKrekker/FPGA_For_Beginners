@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1637244756" />
+    <testcase classname="d_ff_tb" file="/home/mkrekker/Documents/FPGA_For_Beginners/cocotb/d_ff_tb.py" lineno="7" name="d_ff_tb" ratio_time="39884252.85312392" sim_time_ns="105000.000001" time="0.002632617950439453" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# 
+# Start of session at: Thu Nov 11 23:12:27 2021
+# Process ID: 20047
+# Current directory: /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.sdk/webtalk/webtalk.log
+# Journal file: /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

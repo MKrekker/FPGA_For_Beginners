@@ -60,21 +60,30 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 14
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint /home/krekker/linux_qmtech/linux_qmtech.runs/impl_1/linux_qmtech_wrapper.dcp
-  set_property webtalk.parent_dir /home/krekker/linux_qmtech/linux_qmtech.cache/wt [current_project]
-  set_property parent.project_path /home/krekker/linux_qmtech/linux_qmtech.xpr [current_project]
-  set_property ip_output_repo /home/krekker/linux_qmtech/linux_qmtech.cache/ip [current_project]
+  set_param chipscope.maxJobs 1
+  create_project -in_memory -part xc7z020clg400-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.cache/wt [current_project]
+  set_property parent.project_path /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.xpr [current_project]
+  set_property ip_output_repo /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  add_files -quiet /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.runs/synth_1/linux_qmtech_wrapper.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  add_files /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.srcs/sources_1/bd/linux_qmtech/linux_qmtech.bd
+  set_param project.isImplRun false
+  read_xdc /home/mkrekker/Documents/FPGA_For_Beginners/linux_qmtech/linux_qmtech.srcs/constrs_1/new/physical_constr.xdc
+  set_param project.isImplRun true
+  link_design -top linux_qmtech_wrapper -part xc7z020clg400-1
+  set_param project.isImplRun false
+  write_hwdef -force -file linux_qmtech_wrapper.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
