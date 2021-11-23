@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/krekker/spi_adc/spi_adc.srcs/sources_1/new/mcp3201_bram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mcp3201_bram'

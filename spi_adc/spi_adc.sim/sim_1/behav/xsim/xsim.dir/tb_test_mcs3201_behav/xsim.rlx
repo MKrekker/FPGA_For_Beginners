@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5492100310590095450  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 6e692bd9f0fc42efa65c714f5838c303 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_test_mcs3201_behav xil_defaultlib.tb_test_mcs3201 xil_defaultlib.glbl" , 
+    buildDate : "Sep  4 2019" , 
+    buildTime : "09:47:21" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tb_test_mcs3201_behav/xsimk\"   \"xsim.dir/tb_test_mcs3201_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tb_test_mcs3201_behav/obj/xsim_1.lnx64.o\" -L\"/opt/vivado/Vivado/2019.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

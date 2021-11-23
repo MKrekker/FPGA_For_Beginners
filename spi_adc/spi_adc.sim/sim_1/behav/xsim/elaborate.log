@@ -1,0 +1,24 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/vivado/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 6e692bd9f0fc42efa65c714f5838c303 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_test_mcs3201_behav xil_defaultlib.tb_test_mcs3201 xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.clk_div
+Compiling architecture rtl of entity xil_defaultlib.mcp3201_bram [mcp3201_bram_default]
+Compiling module xil_defaultlib.test_mcp3201
+Compiling module xil_defaultlib.mcp3201_beh_model
+Compiling module xil_defaultlib.tb_test_mcs3201
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_test_mcs3201_behav
